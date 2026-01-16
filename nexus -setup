@@ -1,0 +1,4 @@
+yum install java-17-amazon-corretto-jmods -y
+mkdir /app
+cd /app
+wget https://download.sonatype.com/nexus/3/nexus-3.88.0-08-linux-x86_64.tar.gz
