@@ -1,0 +1,5 @@
+yum install -y ansible
+ansible --version
+yum install python-pip -y
+add the password to root user ( passwd root )
+vi /etc/ssh/sshd_config  ( perm user login -remove the hashtag, pass auth -yes )
