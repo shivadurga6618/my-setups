@@ -3,3 +3,23 @@ ansible --version
 yum install python-pip -y
 add the password to root user ( passwd root )
 vi /etc/ssh/sshd_config  ( perm user login -remove the hashtag, pass auth -yes )
+
+
+
+vi /etc/ansible---vim hosts-
+[masters]
+master ansible_host=192.168.1.10 ansible_user=root
+
+[slaves]
+slave1 ansible_host=192.168.1.11 ansible_user=root
+slave2 ansible_host=192.168.1.12 ansible_user=root
+
+
+vi /etc/ansible ---- vim ansible.cfg
+[defaults]
+inventory = /etc/ansible/hosts
+remote_user = root
+host_key_checking = False
+retry_files_enabled = False
+
+
